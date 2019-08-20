@@ -1,0 +1,51 @@
+lisp introduction notes
+
+following this book
+	  http://www.gigamonkeys.com/book/
+	  and using gnu emacs manual
+	  https://www.gnu.org/software/emacs/manual/html_node/
+	  
+EMACS
+	C-_ undo
+	C-g stop entering command
+	C-x C-f opens the current working directory
+	C-a C-e start of line, end of line
+	M-f M-b next word, previous word
+	M-d deletes the next word
+	C-x C-s saves the current working file
+	C-x k option to kill current buffer
+	C-x C-b lists current open buffers
+	C-x b option to change buffer
+	C-x o change window
+	C-x 1 close all other windows except current window
+	C-x 2 h split current buffer
+	C-x 3 v split current buffer
+	C-x 0 kills current window
+	C-x C-c exit emacs
+	
+lisp
+	defun argument is the function creation keyword
+	format argument has two required arguments, a place to send the output and a string
+	load argument takes a file string and loads function definitions
+	FASL files are files already compiled and then can be fast loaded
+
+	lists
+		list function returns a list of its arguments
+		ex list of scalars >> (list 1 2 3)
+
+		property lists
+			 a list where every other element,
+			 starting with the first, is a symbol that describes
+			 what the next element in the list is. basically naming the var
+
+			 ex property list >> (list :apple 5 :pear 2 :lemon 1)
+
+			 you can call methods on property lists
+
+			 getf gets the value associated with the key
+			      >> getf(<list> :key)
+
+slime is the repl manager
+      in emacs C-x slime starts slime
+      
+      q exits slime debugger
