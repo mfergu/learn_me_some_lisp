@@ -1,0 +1,33 @@
+lisp introduction notes
+
+following this book
+	  http://www.gigamonkeys.com/book/
+
+EMACS
+	C-_ undo
+	C-g stop entering command
+	C-x C-f opens the current working directory
+	C-a C-e start of line, end of line
+	M-f M-b next word, previous word
+	M-d deletes the next word
+	C-x C-s saves the current working file
+	C-x k option to kill current buffer
+	C-x C-b lists current open buffers
+	C-x b option to change buffer
+	C-x o change window
+	C-x 1 close all other windows except current window
+	C-x 2 h split current buffer
+	C-x 3 v split current buffer
+	C-x 0 kills current window
+	C-x C-c exit emacs
+	
+lisp
+	defun argument is the function creation keyword
+	format argument has two required arguments, a place to send the output and a string
+	load argument takes a file string and loads function definitions
+	FASL files are files already compiled and then can be fast loaded
+	
+slime is the repl manager
+      in emacs C-x slime starts slime
+      
+      q exits slime debugger
